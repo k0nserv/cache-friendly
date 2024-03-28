@@ -1,0 +1,21 @@
+[package]
+name = "cache-friendly"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ahash = "0.8.3"
+rand = "0.8.5"
+
+[dev-dependencies]
+criterion = "0.5.1"
+
+[[bench]]
+name = "hashmaps"
+harness = false
+
+[[bench]]
+name = "hashmaps_str_keys"
+harness = false
